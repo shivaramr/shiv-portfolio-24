@@ -17,10 +17,14 @@
   }
 }
 
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 6px;
+  width: 6px;
+  height: 18px;
   transition: background-color 0.2s ease-in, color 0.3s ease-out;
+  background: transparent;
 }
 ::-webkit-scrollbar-thumb {
   color: transparent;
