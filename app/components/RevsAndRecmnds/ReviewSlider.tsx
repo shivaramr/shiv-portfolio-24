@@ -1,7 +1,7 @@
 import React from "react";
+import Review from "./Review";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import Review from "./Review";
 
 const responsive = {
   desktop: {

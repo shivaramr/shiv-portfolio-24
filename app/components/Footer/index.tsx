@@ -1,5 +1,9 @@
-import { DevicePhoneMobileIcon, EnvelopeIcon, MapIcon } from "@heroicons/react/20/solid";
 import React from "react";
+import {
+  DevicePhoneMobileIcon,
+  EnvelopeIcon,
+  MapIcon,
+} from "@heroicons/react/20/solid";
 
 const Footer = () => {
   return (
@@ -10,8 +14,12 @@ const Footer = () => {
             <MapIcon className="md:w-[5rem] md:h-[5rem] w-[3.5rem] h-[3.5rem] text-black" />
           </div>
           <div>
-            <h1 className="text-[25px] mb-[0.2rem] font-semibold text-white">Address</h1>
-            <p className="text-[17px] w-[50%] text-white opacity-60">Lorem Ipsum dolor sit</p>
+            <h1 className="text-[25px] mb-[0.2rem] font-semibold text-white">
+              Address
+            </h1>
+            <p className="text-[17px] w-[50%] text-white opacity-60">
+              Lorem Ipsum dolor sit
+            </p>
           </div>
         </div>
         <div className="flex items-center space-x-6">
@@ -19,8 +27,12 @@ const Footer = () => {
             <DevicePhoneMobileIcon className="md:w-[5rem] md:h-[5rem] w-[3.5rem] h-[3.5rem] text-black" />
           </div>
           <div>
-            <h1 className="text-[25px] mb-[0.2rem] font-semibold text-white">Phone</h1>
-            <p className="text-[17px] w-[50%] text-white opacity-60">+91 - 1234567890</p>
+            <h1 className="text-[25px] mb-[0.2rem] font-semibold text-white">
+              Phone
+            </h1>
+            <p className="text-[17px] w-[50%] text-white opacity-60">
+              +91 - 1234567890
+            </p>
           </div>
         </div>
         <div className="flex items-center space-x-6">
@@ -28,8 +40,12 @@ const Footer = () => {
             <EnvelopeIcon className="md:w-[5rem] md:h-[5rem] w-[3.5rem] h-[3.5rem] text-black" />
           </div>
           <div>
-            <h1 className="text-[25px] mb-[0.2rem] font-semibold text-white">Send Us Email</h1>
-            <p className="text-[17px] w-[50%] text-white opacity-60">man@mail.com</p>
+            <h1 className="text-[25px] mb-[0.2rem] font-semibold text-white">
+              Send Us Email
+            </h1>
+            <p className="text-[17px] w-[50%] text-white opacity-60">
+              man@mail.com
+            </p>
           </div>
         </div>
       </div>

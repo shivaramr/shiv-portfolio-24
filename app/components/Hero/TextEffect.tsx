@@ -20,7 +20,7 @@ const TextEffect = () => {
         "Javascript Developer",
         1500,
       ]}
-    //   wrapper="span"
+      //   wrapper="span"
       speed={50}
       className="text-[2rem md:text-[3rem] text-[#55e6a5] font-bold uppercase"
       style={{ fontSize: "2em", display: "inline-block" }}
@@ -29,4 +29,4 @@ const TextEffect = () => {
   );
 };
 
-export default TextEffect
+export default TextEffect;
