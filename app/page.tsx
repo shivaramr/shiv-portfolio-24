@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 import EducationAndSkill from "./components/EducationAndSkill";
 import RevsAndRecmnds from "./components/RevsAndRecmnds";
 import MobileNav from "./components/Navbar/MobileNav";
+import ContactUs from "./components/ContactUs";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -56,8 +57,9 @@ export default function Home() {
         <EducationAndSkill />
         <Projects />
         <RevsAndRecmnds />
-        <Footer />
       </div>
+      <ContactUs />
+      <Footer />
     </div>
   );
 }
