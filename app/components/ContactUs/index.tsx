@@ -82,7 +82,6 @@ const ContactUs = () => {
                 placeholder="Just saying hi!"
               />
             </div>
-
             <div className="mb-6">
               <label htmlFor="message" className="text-white block text-sm mb-2 font-medium">
                 Message
