@@ -14,7 +14,7 @@ const AboutMe = () => {
           <div className="mb-[3rem] flex items-center md:space-x-10">
             <span className="w-[100px] hidden md:block h-[5px] bg-slate-400 rounded-sm"></span>
             <p className="text-[19px] text-slate-300 w-[80%]">
-              The journey commenced as a full-stack developer, with proficiency in React.js for
+              My journey commenced as a full-stack developer, with proficiency in React.js for
               frontend development and Node.js for backend tasks. Over time, a transition was made
               towards specialization in React.js, leading to the current role as a full-time
               frontend developer. Additionally, a gradual transition to Next.js is underway,
