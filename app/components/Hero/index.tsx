@@ -36,7 +36,7 @@ const Hero = () => {
             </button>
           </div>
         </div>
-        <div className="w-[500px] hidden bg-[#55e6a5] relative lg:flex items-center rounded-full h-[500px] transition-transform duration-700 hover:scale-x-[-1]">
+        <div className="w-[500px] hidden bg-[#55e6a5] relative lg:flex items-center rounded-full h-[500px] transform transition-all duration-300 hover:scale-x-[-1]">
           <Image
             src={isHovering ? "/images/u2-1.jpg" : "/images/u2.png"}
             alt="user"
