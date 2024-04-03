@@ -36,17 +36,14 @@ const Hero = () => {
             </button>
           </div>
         </div>
-
-        <div
-          className="w-[500px] hidden bg-[#55e6a5] relative lg:flex items-center rounded-full h-[500px] cursor-grab"
-          onMouseEnter={onMouseMove}
-          onMouseLeave={onMouseMove}
-        >
+        <div className="w-[500px] hidden bg-[#55e6a5] relative lg:flex items-center rounded-full h-[500px] transition-transform duration-700 hover:scale-x-[-1]">
           <Image
             src={isHovering ? "/images/u2-1.jpg" : "/images/u2.png"}
             alt="user"
             layout="fill"
-            className="object-cover rounded-full"
+            className="object-cover rounded-full hover:scale-x-[-1]"
+            onMouseEnter={onMouseMove}
+            onMouseLeave={onMouseMove}
           />
         </div>
       </div>
