@@ -46,10 +46,10 @@ const ContactUs = () => {
             have a query or simply wish to reach out, I`ll endeavor to respond promptly!
           </p>
           <div className="socials flex flex-row gap-2">
-            <Link href="github.com">
+            <Link target="_blank" href="https://github.com/shivaramr" rel="noopener noreferrer">
               <Image src="/images/github-icon.svg" alt="github" width={36} height={36} />
             </Link>
-            <Link href="linkedin.com">
+            <Link target="_blank" href="https://www.linkedin.com/in/rshivaram" rel="noopener noreferrer">
               <Image src="/images/linkedin-icon.svg" alt="linkedin" width={36} height={36} />
             </Link>
           </div>
