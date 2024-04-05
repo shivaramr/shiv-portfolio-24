@@ -7,7 +7,7 @@ import MyServices from "./components/MyServices";
 import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
-import EducationAndSkill from "./components/EducationAndSkill";
+import ExperienceAndSkill from "./components/ExpeienceAndSkill";
 import RevsAndRecmnds from "./components/RevsAndRecmnds";
 import MobileNav from "./components/Navbar/MobileNav";
 import ContactUs from "./components/ContactUs";
@@ -55,7 +55,7 @@ export default function Home() {
       <div className="relative z-[30]">
         <AboutMe />
         <MyServices />
-        <EducationAndSkill />
+        <ExperienceAndSkill />
         <Skills />
         <Projects />
         <RevsAndRecmnds />
