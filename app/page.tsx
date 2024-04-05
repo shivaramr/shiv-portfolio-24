@@ -11,6 +11,7 @@ import EducationAndSkill from "./components/EducationAndSkill";
 import RevsAndRecmnds from "./components/RevsAndRecmnds";
 import MobileNav from "./components/Navbar/MobileNav";
 import ContactUs from "./components/ContactUs";
+import Skills from "./components/Skills";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -55,6 +56,7 @@ export default function Home() {
         <AboutMe />
         <MyServices />
         <EducationAndSkill />
+        <Skills />
         <Projects />
         <RevsAndRecmnds />
       </div>
