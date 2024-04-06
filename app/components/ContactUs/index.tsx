@@ -1,10 +1,13 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { toast } from "sonner";
 
 const ContactUs = () => {
+  const [loading, setLoading] = useState(false);
+
   const handleSubmit = async (e: any) => {
     e.preventDefault();
     const data = {
@@ -23,14 +26,19 @@ const ContactUs = () => {
       body: JSONdata,
     };
 
+    setLoading(true);
     const response = await fetch(endpoint, options);
     const resData = await response.json();
-    console.log(resData);
 
-    if (response.status === 200) {
-      console.log("Message sent.");
+    if (response.status === 200 || resData.status === "OK") {
+      e.target.email.value = "";
+      e.target.subject.value = "";
+      e.target.message.value = "";
+      toast.success(
+        "Email sent! If no response in 7 days, please follow up via phone/WhatsApp. Appreciate your attention."
+      );
+      setLoading(false);
     }
-    // Use sonner to show snackbar success of above API
   };
 
   return (
@@ -40,7 +48,7 @@ const ContactUs = () => {
       </h1>
       <section className="grid md:grid-cols-2 py-20 gap-4 w-[80%] mx-auto items-center">
         <div>
-          <h5 className="text-[25px] text-white mt-[1rem] font-bold">Let`s Connect</h5>
+          <h5 className="text-[25px] text-white mt-0 md:mt-[1rem] font-bold">Let`s Connect</h5>
           <p className="text-[#aaaaaa] font-normal w-[80%] text-[17px] opacity-80 mb-3">
             I`m actively seeking new opportunities, and my inbox is readily available. Whether you
             have a query or simply wish to reach out, I`ll endeavor to respond promptly!
@@ -49,7 +57,11 @@ const ContactUs = () => {
             <Link target="_blank" href="https://github.com/shivaramr" rel="noopener noreferrer">
               <Image src="/images/github-icon.svg" alt="github" width={36} height={36} />
             </Link>
-            <Link target="_blank" href="https://www.linkedin.com/in/rshivaram" rel="noopener noreferrer">
+            <Link
+              target="_blank"
+              href="https://www.linkedin.com/in/rshivaram"
+              rel="noopener noreferrer"
+            >
               <Image src="/images/linkedin-icon.svg" alt="linkedin" width={36} height={36} />
             </Link>
           </div>
@@ -96,9 +108,12 @@ const ContactUs = () => {
             </div>
             <button
               type="submit"
-              className="px-[2rem] hover:bg-yellow-400 transition-all duration-200 py-[1rem] text-[18px] font-bold uppercase bg-[#55e6a5] text-black flex items-center space-x-2"
+              disabled={loading}
+              className={`px-[2rem] hover:bg-yellow-400 transition-all duration-200 py-[1rem] text-[18px] font-bold uppercase ${
+                loading ? "bg-yellow-400" : "bg-[#55e6a5]"
+              } text-black flex items-center space-x-2`}
             >
-              Send Message
+              {loading ? "Loading..." : "Send Message"}
             </button>
           </form>
         </div>
