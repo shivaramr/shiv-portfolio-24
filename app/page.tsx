@@ -12,17 +12,14 @@ import RevsAndRecmnds from "./components/RevsAndRecmnds";
 import MobileNav from "./components/Navbar/MobileNav";
 import ContactUs from "./components/ContactUs";
 import Skills from "./components/Skills";
+import { Toaster } from "sonner";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 export default function Home() {
   const [nav, setNav] = useState(false);
-  const openNav = () => {
-    setNav(true);
-  };
-  const closeNav = () => {
-    setNav(false);
-  };
+  const openNav = () => setNav(true);
+  const closeNav = () => setNav(false);
 
   useEffect(() => {
     AOS.init({
@@ -49,6 +46,7 @@ export default function Home() {
 
   return (
     <div className="font-primary">
+      <Toaster position="bottom-left" richColors/>
       <MobileNav nav={nav} closeNav={closeNav} />
       <NavBar openNav={openNav} />
       <Hero />
