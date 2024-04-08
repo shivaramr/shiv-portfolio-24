@@ -63,7 +63,7 @@ export const skills = [
     data: [
       {
         skill: "Problem-Solving",
-        level: "80%",
+        level: "78%",
       },
       {
         skill: "Collaboration",
@@ -71,7 +71,7 @@ export const skills = [
       },
       {
         skill: "Attention to Detail",
-        level: "85%",
+        level: "92%",
       },
     ],
   },
