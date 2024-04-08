@@ -18,16 +18,16 @@
 }
 
 ::-webkit-scrollbar-track {
-  background-color: transparent;
+  background-color: #141c27;
 }
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 8px;
   height: 18px;
   transition: background-color 0.2s ease-in, color 0.3s ease-out;
   background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  color: transparent;
+  background: #c5c5c5;
   border-radius: 12px;
   transition: background-color 0.2s ease-in, color 0.3s ease-out;
 }
@@ -35,5 +35,9 @@
   background: #c5c5c5;
 }
 ::-webkit-scrollbar-thumb:window-inactive {
-  background: #f1f1f1;
+  background: #c5c5c5;
+}
+
+html {
+  scroll-behavior: smooth;
 }
