@@ -13,12 +13,24 @@ const NavBar = ({ openNav }: Props) => {
           Shiv
           <span className="mx-1 text-yellow-300">here!</span>
         </h1>
-        <div className="nav-link">HOME</div>
-        <div className="nav-link">ABOUT</div>
-        <div className="nav-link">SERVICES</div>
-        <div className="nav-link">EXPERIENCE</div>
-        <div className="nav-link">PROJECT</div>
-        <div className="nav-link">CONTACT</div>
+        <a href="#home" className="nav-link">
+          HOME
+        </a>
+        <a href="#about" className="nav-link">
+          ABOUT
+        </a>
+        <a href="#services" className="nav-link">
+          SERVICES
+        </a>
+        <a href="#experiences" className="nav-link">
+          EXPERIENCE
+        </a>
+        <a href="#projects" className="nav-link">
+          PROJECT
+        </a>
+        <a href="#contact" className="nav-link">
+          CONTACT
+        </a>
         <div onClick={openNav}>
           <Bars3Icon className="w-[2rem] md:hidden h-[2rem] cursor-pointer text-yellow-300" />
         </div>

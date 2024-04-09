@@ -42,7 +42,7 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="pt-[4rem] md:pt-[8rem] pb-[5rem] bg-[#09101a]">
+    <div id="contact" className="pt-[4rem] md:pt-[8rem] pb-[5rem] bg-[#09101a]">
       <h1 className="heading">
         Contact <span className="text-yellow-400">Me</span>
       </h1>
