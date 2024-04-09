@@ -21,7 +21,7 @@
   background-color: #141c27;
 }
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
   height: 18px;
   transition: background-color 0.2s ease-in, color 0.3s ease-out;
   background: transparent;
@@ -32,12 +32,18 @@
   transition: background-color 0.2s ease-in, color 0.3s ease-out;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #c5c5c5;
+  background: #f1f1f1;
 }
 ::-webkit-scrollbar-thumb:window-inactive {
   background: #c5c5c5;
 }
 
 html {
+  overflow-x: hidden;
   scroll-behavior: smooth;
+  scroll-padding: 3.8rem;
+
+  @media (min-width: 768) {
+    scroll-padding: 6.8rem;
+  }
 }
