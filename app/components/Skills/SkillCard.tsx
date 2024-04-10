@@ -23,8 +23,8 @@ const SkillCard = ({ item }: Props) => {
             <p>{level}</p>
           </div>
           <div
-            className={`h-[6px]  bg-[#55e6a5] transition-width ease-in-out duration-300 delay-150`}
-            style={{ width: level,maxWidth: '100%', minWidth: '0' }}
+            className={`h-[6px]  bg-[#55e6a5] transform transition-all ease-in-out duration-300 delay-150`}
+            style={{ width: level, maxWidth: "100%", minWidth: "0" }}
           />
         </div>
       ))}
