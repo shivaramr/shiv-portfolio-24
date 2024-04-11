@@ -41,9 +41,9 @@
 html {
   overflow-x: hidden;
   scroll-behavior: smooth;
-  scroll-padding: 3.8rem;
+  /* scroll-padding: 3.8rem;
 
   @media (min-width: 768) {
     scroll-padding: 6.8rem;
-  }
+  } */
 }
