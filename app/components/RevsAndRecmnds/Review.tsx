@@ -7,9 +7,11 @@ interface Props {
   name: string;
   role: string;
   desc: string;
+  starRating: number;
 }
 
-const Review = ({ image, name, role,desc }: Props) => {
+const Review = ({ image, name, role, desc, starRating }: Props) => {
+  const stars = Array.from({ length: Math.round(starRating) }, (_, index) => index + 1);
   return (
     <div className="flex flex-col text-center justify-center">
       <Image
@@ -21,19 +23,13 @@ const Review = ({ image, name, role,desc }: Props) => {
         className="mx-auto mb-[2rem] rounded-full"
       />
       <div className="flex items-center mx-auto">
-        <StarIcon className="w-[2rem] h-[2rem] text-yellow-500" />
-        <StarIcon className="w-[2rem] h-[2rem] text-yellow-500" />
-        <StarIcon className="w-[2rem] h-[2rem] text-yellow-500" />
-        <StarIcon className="w-[2rem] h-[2rem] text-yellow-500" />
-        <StarIcon className="w-[2rem] h-[2rem] text-yellow-500" />
+        {stars.map((_, idx) => (
+          <StarIcon key={idx} className="w-[2rem] h-[2rem] text-yellow-500" />
+        ))}
       </div>
       <h1 className="text-[25px] text-white mt-[1rem]">{name}</h1>
-      <p className="text-[18px] text-white opacity-75 mt-[0.5rem] mb-[1.4rem]">
-        {role}
-      </p>
-      <p className="text-[16px] text-white opacity-50 w-[90%] md:w-[50%] mx-auto">
-        {desc}
-      </p>
+      <p className="text-[18px] text-white opacity-75 mt-[0.5rem] mb-[1.4rem]">{role}</p>
+      <p className="text-[16px] text-white opacity-50 w-[90%] md:w-[50%] mx-auto">{desc}</p>
     </div>
   );
 };
