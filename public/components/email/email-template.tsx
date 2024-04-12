@@ -31,7 +31,7 @@ export const EmailTemplate = ({
     <Preview>Leads from Portfolio Website.</Preview>
     <Body style={main}>
       <Container style={container}>
-        <Img src={`${baseUrl}/images/u1.jpg`} width="170" height="50" alt="Logo" style={logo} />
+        <Img src={`https://resend.com/static/posts/logo-warp.jpg`} width="50" height="50" alt="Logo" style={logo} />
         <Text style={paragraph}>Hi Shiv,</Text>
         <Heading style={h1}>Subject: {subject}</Heading>
         <Text style={paragraph}>
