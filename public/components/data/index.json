@@ -1,0 +1,194 @@
+{
+  "shortName": "Shiv",
+  "name": "Shivaram",
+  "hero": {
+    "roles": [
+      "Coder",
+      "Web Developer",
+      "Frontend Developer",
+      "React Developer",
+      "Next Developer",
+      "Typescript Developer",
+      "Javascript Developer"
+    ],
+    "intro": "Well, if you ask me who I am? The answer would go something like this: a person who loves JavaScript and is now exploring TypeScript, I`m all about learning and helping out. I`m excited to pitch in on open-source projects and support others in building awesome websites. With a big dose of enthusiasm and a hunger for new experiences, I`m ready to tackle whatever comes my way in the world of software development.",
+    "cvPath": "/components/resume/R_Shivaram_Resume.pdf",
+    "videoLink": "",
+    "heroImgPath": "/images/u2-1.jpg",
+    "heroAvatarPath": "/images/u2.png"
+  },
+  "aboutMe": {
+    "intro": "My journey commenced as a full-stack developer, with proficiency in React.js for frontend development and Node.js for backend tasks. Over time, a transition was made towards specialization in React.js, leading to the current role as a full-time frontend developer. Additionally, a gradual transition to Next.js is underway, alongside continued contributions as a part-time backend developer, utilizing expertise in JavaScript and TypeScript to address minor bugs and enhance overall system functionality.",
+    "cvPath": "/components/resume/R_Shivaram_Resume.pdf",
+    "aboutImgPath": "",
+    "aboutAvatarPath": "/images/about.jpg"
+  },
+  "services": {
+    "frontendData": " Began in Aug 2020 as full-stack web dev with React.js & JS. Transitioned to focus on React.js with TypeScript. Learning Next.js. Exp in Redux, React-Query. Mastering HTML, CSS, SCSS. Explored Material UI, Bootstrap, AntDesign, Syncfusion, Tailwind CSS, DevExtreme for data projects. Excited about DevExtreme`s data features.",
+    "backendData": "Started as a full stack developer, specializing in API development with Node.js, MongoDB, and MySQL. Shifted focus to frontend due to job demands. Currently exploring Nest.js with TypeScript for backend tasks.",
+    "fullstackData": "Although my career commenced as a full-stack developer, project requirements prompted me to pivot and intensify my focus on frontend development. Presently, I am adept at contributing to both frontend and backend development as per project demands, leveraging my proficiency in JavaScript and TypeScript."
+  },
+  "experienceAndSkills": {
+    "experience": [
+      {
+        "title": "React Developer",
+        "company": "Gleren Technologies",
+        "jobDate": "Aug 2022 - Present",
+        "data": "Developing user interfaces for a data-intensive React project, optimizing carbon estimation in construction. Empowering sustainability, aiding in carbon emission control and resource management for effective planning and expenditure control.",
+        "tech": "Reactjs, Typescript, HTML, SCSS, Redux toolkit, DevExpress"
+      },
+      {
+        "title": "Software Engineer",
+        "company": "Sedai",
+        "jobDate": "Oct 2021 - Feb 2022",
+        "data": "Developed user interfaces for the project that eases the work of SREs to maintain their cloud storage and memory allocation mainly in the Amazon cloud.",
+        "tech": "Reactjs, Typescript, HTML, SCSS, React Query, Bootstrap"
+      },
+      {
+        "title": "Software Engineer",
+        "company": "Kimball Electronics (India) Pvt. Ltd.",
+        "jobDate": "Aug 2020 - Sept 2021",
+        "data": "Developed user interfaces for an Industry 4.0 project along with data handling and processing it in a format as usable for the UI developer using the knowledge of Reactjs, redux, hooks, Nodejs etc. Single handedly developed a Nodejs codebase from scratch having a Mongodb database.",
+        "tech": "Reactjs, Javascript, Nodejs, HTML, CSS, Redux, Material UI"
+      }
+    ],
+    "skills": [
+      {
+        "key": "frontend",
+        "title": "Frontend",
+        "data": [
+          {
+            "skill": "HTML",
+            "level": "80%"
+          },
+          {
+            "skill": "CSS3 (SaSS/SCSS)",
+            "level": "77%"
+          },
+          {
+            "skill": "Typescript",
+            "level": "65%"
+          },
+          {
+            "skill": "Next Js",
+            "level": "60%"
+          },
+          {
+            "skill": "React Js",
+            "level": "89%"
+          }
+        ]
+      },
+      {
+        "key": "backend",
+        "title": "Backend",
+        "data": [
+          {
+            "skill": "Node.js",
+            "level": "45%"
+          },
+          {
+            "skill": "Express.js",
+            "level": "30%"
+          }
+        ]
+      },
+      {
+        "key": "tools",
+        "title": "Tools",
+        "data": [
+          {
+            "skill": "Git & Github",
+            "level": "80%"
+          },
+          {
+            "skill": "Visual Studio Code",
+            "level": "72%"
+          },
+          {
+            "skill": "Responsive Web Design",
+            "level": "70%"
+          }
+        ]
+      },
+      {
+        "key": "softSkills",
+        "title": "Soft Skills",
+        "data": [
+          {
+            "skill": "Problem-Solving",
+            "level": "78%"
+          },
+          {
+            "skill": "Collaboration",
+            "level": "75%"
+          },
+          {
+            "skill": "Attention to Detail",
+            "level": "92%"
+          }
+        ]
+      }
+    ]
+  },
+  "projects": [
+    {
+      "imgPath": "/images/p1.jpg",
+      "code": "https://github.com/shivaramr/weather-app",
+      "demo": "https://weather-app-gold-beta.vercel.app/",
+      "video": "https://www.youtube.com/watch?v=J35L2ngeouI"
+    },
+    {
+      "imgPath": "/images/p2.jpg",
+      "code": "https://github.com/shivaramr/ai_summarizer",
+      "demo": "https://shivaramr.github.io/ai_summarizer/",
+      "video": "https://www.youtube.com/watch?v=kezxCGWxxIs"
+    },
+    {
+      "imgPath": "/images/p3.jpg",
+      "code": "https://github.com/shivaramr/dashboard-sync-fusion",
+      "demo": "",
+      "video": "https://www.youtube.com/watch?v=tKiva6KAp6w"
+    }
+  ],
+  "revs": [
+    {
+      "imgPath": "/images/v1.jpg",
+      "name": "Venkatesh Jalendiran",
+      "role": "Development Manager",
+      "desc": "For the past nine months, Shivaram has been an invaluable asset to our team, serving as a highly skilled front-end developer. His intelligence and talent extend beyond technical proficiency, as he consistently demonstrates a thorough analysis of project requirements. Shivaram goes above and beyond by providing detailed technical feasibility studies and thoughtful recommendations. As a collaborative team player, he contributes significantly to our overall success through his unwavering dedication and hard work. I wholeheartedly endorse Shivaram as an integral member of any team and recommend him without reservation.",
+      "starRating": 4
+    },
+    {
+      "imgPath": "/images/l1.jpg",
+      "name": "Lachlan Aldred",
+      "role": "CTO",
+      "desc": "R Shivaram, served as a React Developer under my supervision for nearly 11 months. During that time he delivered some exceptional, innovative user interfaces for the new product being developed. Shivaram was productive and efficient, had a positive mindset and worked well with other team members. His commitment to the collaborative process makes him an asset to any team. In our fast-paced environment, Shivaram consistently delivered projects on time without compromising on quality. I wholeheartedly recommend R Shivaram for any React Developer position. Please feel free to reach out if you have any questions or need further information.",
+      "starRating": 5
+    },
+    {
+      "imgPath": "/images/m2.jpg",
+      "name": "Mathew Falia",
+      "role": "CSPO Business Analyst",
+      "desc": "I am delighted to recommend R Shivaram as an exceptional front-end developer. Working closely with him for several months, I've admired his dedication, expertise, and professionalism. R Shivaram excels in HTML, CSS, JavaScript, and various front-end frameworks. His profound understanding of responsive design and user experience principles is reflected in the superior websites and web applications he delivers. Notably, his adept problem-solving skills, attention to detail, and collaborative nature set him apart. R Shivaram consistently meets deadlines and exceeds expectations, showcasing his commitment to excellence. I confidently endorse him for any front-end development role or project. (Concised original)",
+      "starRating": 5
+    },
+    {
+      "imgPath": "/images/m1.jpg",
+      "name": "Marshall Cheneval",
+      "role": "Manager - Customer Success",
+      "desc": "Shivaram has been instrumental within our current development team. He always produces high quality work within a quick timescale and drives solution based conversations on the best way to achieve outcomes. He is an asset to any team.",
+      "starRating": 5
+    }
+  ],
+  "contactMe": {
+    "info": "I`m actively seeking new opportunities, and my inbox is readily available. Whether you have a query or simply wish to reach out, I`ll endeavor to respond promptly!",
+    "github": "https://github.com/shivaramr",
+    "linkedin": "https://www.linkedin.com/in/rshivaram"
+  },
+  "footer": {
+    "address": "Aswathy, Metro Gardens, Kerala-682017",
+    "phone": "+91-9567794351",
+    "email": "shivaramr.mec@gmail.com"
+  }
+}

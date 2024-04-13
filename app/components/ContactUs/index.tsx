@@ -4,8 +4,10 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { toast } from "sonner";
+import { contactMe } from "../../../public/components/data/index.json";
 
 const ContactUs = () => {
+  const { info, github, linkedin } = contactMe;
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e: any) => {
@@ -49,19 +51,12 @@ const ContactUs = () => {
       <section className="grid md:grid-cols-2 py-20 gap-4 w-[80%] mx-auto items-center">
         <div>
           <h5 className="text-[25px] text-white mt-0 md:mt-[1rem] font-bold">Let`s Connect</h5>
-          <p className="text-[#aaaaaa] font-normal w-[80%] text-[17px] opacity-80 mb-3">
-            I`m actively seeking new opportunities, and my inbox is readily available. Whether you
-            have a query or simply wish to reach out, I`ll endeavor to respond promptly!
-          </p>
+          <p className="text-[#aaaaaa] font-normal w-[80%] text-[17px] opacity-80 mb-3">{info}</p>
           <div className="socials flex flex-row gap-2">
-            <Link target="_blank" href="https://github.com/shivaramr" rel="noopener noreferrer">
+            <Link target="_blank" href={github} rel="noopener noreferrer">
               <Image src="/images/github-icon.svg" alt="github" width={36} height={36} />
             </Link>
-            <Link
-              target="_blank"
-              href="https://www.linkedin.com/in/rshivaram"
-              rel="noopener noreferrer"
-            >
+            <Link target="_blank" href={linkedin} rel="noopener noreferrer">
               <Image src="/images/linkedin-icon.svg" alt="linkedin" width={36} height={36} />
             </Link>
           </div>
