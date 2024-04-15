@@ -48,7 +48,7 @@ const ContactUs = () => {
       <h1 className="heading">
         Contact <span className="text-yellow-400">Me</span>
       </h1>
-      <section className="grid md:grid-cols-2 py-20 gap-4 w-[80%] mx-auto items-center">
+      <section className="grid md:grid-cols-2 py-10 md:py-20 gap-4 w-[80%] mx-auto items-center">
         <div className="mb-4 md:mb-0">
           <h5 className="text-[25px] text-white mt-0 md:mt-[1rem] font-bold">Let`s Connect</h5>
           <p className="text-[#aaaaaa] font-normal w-[100%] md:w-[80%] text-[17px] opacity-80 mb-3">{info}</p>
