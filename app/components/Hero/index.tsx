@@ -12,7 +12,7 @@ const Hero = () => {
   const onMouseLeave = () => setIsHovered(false);
 
   return (
-    <div className='h-[92vh] bg-[url("/images/banner.jpg")] mt-[12vh] bg-cover bg-center'>
+    <div className='h-[92vh] w-[100%] bg-[url("/images/banner.jpg")] mt-[12vh] bg-cover bg-center'>
       <Particle />
       <div
         id="home"

@@ -32,9 +32,9 @@ const NavBar = ({ openNav }: Props) => {
         <a href="#contact" className="nav-link">
           CONTACT
         </a>
-        {/* <div onClick={openNav}> */}
-          <Bars3Icon onClick={openNav} className="w-[2rem] md:hidden h-[2rem] cursor-pointer text-yellow-300" />
-        {/* </div> */}
+        <div onClick={openNav}>
+          <Bars3Icon className="w-[2rem] md:hidden h-[2rem] cursor-pointer text-yellow-300" />
+        </div>
       </div>
     </div>
   );
