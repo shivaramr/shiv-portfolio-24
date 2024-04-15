@@ -8,8 +8,8 @@ interface Props {
 
 const NavBar = ({ openNav }: Props) => {
   return (
-    <div className="w-[100%] fixed z-[10000] top-0 h-[12vh] bg-[#141c27] shadow-md">
-      <div className="flex items-center justify-between w-[80%] mx-auto px-[1rem] h-[100%]">
+    <div className="w-full fixed z-[10000] top-0 h-[12vh] bg-[#141c27] shadow-md">
+      <div className="flex items-center justify-between w-[80%] md:w-[90%] lg:w-[80%] xl:w-[70%] mx-auto px-[1rem] h-[100%]">
         <h1 className="flex-[0.6] cursor-pointer text-[25px] text-white font-bold">
           {shortName}
           <span className="mx-1 text-yellow-300">here!</span>
