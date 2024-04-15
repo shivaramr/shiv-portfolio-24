@@ -38,7 +38,7 @@
   background: #c5c5c5;
 }
 
-html {
+html, body {
   overflow-x: hidden;
   scroll-behavior: smooth;
   /* scroll-padding: 3.8rem;
