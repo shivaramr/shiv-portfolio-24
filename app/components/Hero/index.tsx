@@ -39,7 +39,7 @@ const Hero = () => {
             )}
           </div>
         </div>
-        <div className="grid w-[500px] mx-auto hidden bg-[#55e6a5] hover:bg-[#02050a] relative lg:flex items-center rounded-full h-[500px] transform transition-all duration-300 hover:scale-x-[-1] overflow-hidden">
+        <div className="w-[500px] mx-auto hidden bg-[#55e6a5] hover:bg-[#02050a] relative lg:flex items-center rounded-full h-[500px] transform transition-all duration-300 hover:scale-x-[-1] overflow-hidden">
           <Image
             src={isHovering ? heroImgPath : heroAvatarPath}
             alt="user"
