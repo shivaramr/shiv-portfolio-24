@@ -17,9 +17,9 @@ const SkillsItem = ({ title, year, company, data, tech }: Props) => {
       <h1 className="mt-[2rem] uppercase font-semibold text-[20px] sm:text-[25px] md:text-[340x] text-white">
         {title}
       </h1>
-      <p className="text-white font-normal mb-[1rem] w-[80%] text-[17px] opacity-78">{company}</p>
-      <p className="text-[#aaaaaa] font-normal mb-[1rem] w-[80%] text-[17px] opacity-80">{data}</p>
-      <p className="text-[#aaaaaa] font-normal w-[80%] text-[17px] opacity-80">
+      <p className="text-white font-normal mb-[1rem] w-[100%] text-[17px] opacity-78">{company}</p>
+      <p className="text-[#aaaaaa] font-normal mb-[1rem] w-[100%] text-[17px] opacity-80">{data}</p>
+      <p className="text-[#aaaaaa] font-normal w-[100%] text-[17px] opacity-80">
         <span className="font-bold me-1">Technologies Used:</span>
         {tech}
       </p>

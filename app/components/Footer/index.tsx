@@ -7,12 +7,12 @@ const Footer = () => {
       <div className="grid border-b-[1px] pb-[6rem] border-gray-400 grid-cols-1 lg:grid-cols-3 md:grid-cols-2 w-[80%] mx-auto gap-[3rem]">
         {footerData.map(({ Icon, heading, value }: FooterDataType) => (
           <div key={heading} className="flex items-center space-x-6">
-            <div className="md:w-[6.5rem] md:h-[6.5rem] w-[5rem] h-[5rem] flex items-center justify-center rounded-full bg-[#55e6a5]">
-              <Icon className="md:w-[5rem] md:h-[5rem] w-[3.5rem] h-[3.5rem] text-black" />
+            <div className="flex-shrink-0 md:w-20 md:h-20 w-16 h-16 flex items-center justify-center rounded-full bg-[#55e6a5]">
+              <Icon className="md:w-16 md:h-16 w-12 h-12 text-black" />
             </div>
-            <div>
-              <h1 className="text-[25px] mb-[0.2rem] font-semibold text-white">{heading}</h1>
-              <p className="text-[16px] w-[100%] text-white opacity-60">{value}</p>
+            <div className="flex-grow">
+              <h1 className="text-2xl mb-1 font-semibold text-white">{heading}</h1>
+              <p className="text-base w-full text-white opacity-60">{value}</p>
             </div>
           </div>
         ))}

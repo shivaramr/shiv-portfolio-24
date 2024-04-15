@@ -15,7 +15,7 @@ const AboutMe = () => {
           </h2>
           <div className="mb-[3rem] flex items-center md:space-x-10">
             <span className="w-[100px] hidden md:block h-[5px] bg-slate-400 rounded-sm"></span>
-            <p className="text-[19px] text-slate-300 w-[80%]">{intro}</p>
+            <p className="text-[19px] text-slate-300 w-[100%]">{intro}</p>
           </div>
           <button className="px-[2rem] hover:bg-yellow-400 transition-all duration-200 py-[1rem] text-[18px] font-bold uppercase bg-[#55e6a5] text-black">
             <a href={cvPath} className="flex items-center space-x-2" download>
