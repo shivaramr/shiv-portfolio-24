@@ -1,14 +1,15 @@
-"use client";
-
-import React, { useState } from "react";
+import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { toast } from "sonner";
-import { contactMe } from "../../../public/components/data/index.json";
+import { useProfileContext } from "@/app/contexts/context";
+import data from "../../../public/components/data/index.json";
 
 const ContactUs = () => {
-  const { info, github, linkedin } = contactMe;
-  const [loading, setLoading] = useState(false);
+  const { contactMeData } = data;
+  const { info, github, linkedin } = contactMeData;
+  const { state, dispatch } = useProfileContext();
+  const { loading } = state;
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
@@ -28,7 +29,7 @@ const ContactUs = () => {
       body: JSONdata,
     };
 
-    setLoading(true);
+    dispatch({ type: "FETCH_REQUEST" });
     const response = await fetch(endpoint, options);
     const resData = await response.json();
 
@@ -39,8 +40,8 @@ const ContactUs = () => {
       toast.success(
         "Email sent! If no response in 7 days, please follow up via phone/WhatsApp. Appreciate your attention."
       );
-      setLoading(false);
     }
+    dispatch({ type: "FETCH_SUCCESS" });
   };
 
   return (
@@ -51,7 +52,9 @@ const ContactUs = () => {
       <section className="grid md:grid-cols-2 py-10 md:py-20 gap-4 w-[80%] mx-auto items-center">
         <div className="mb-4 md:mb-0">
           <h5 className="text-[25px] text-white mt-0 md:mt-[1rem] font-bold">Let`s Connect</h5>
-          <p className="text-[#aaaaaa] font-normal w-[100%] md:w-[80%] text-[17px] opacity-80 mb-3">{info}</p>
+          <p className="text-[#aaaaaa] font-normal w-[100%] md:w-[80%] text-[17px] opacity-80 mb-3">
+            {info}
+          </p>
           <div className="socials flex flex-row gap-2">
             <Link target="_blank" href={github} rel="noopener noreferrer">
               <Image src="/images/github-icon.svg" alt="github" width={36} height={36} />
