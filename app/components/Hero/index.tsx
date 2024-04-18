@@ -3,10 +3,11 @@ import Image from "next/image";
 import Particle from "./Particle";
 import TextEffect from "./TextEffect";
 import { ArrowDownTrayIcon, PlayCircleIcon } from "@heroicons/react/20/solid";
-import { hero, name } from "../../../public/components/data/index.json";
+import data from "../../../public/components/data/index.json";
 
 const Hero = () => {
-  const { cvPath, intro, videoLink, heroImgPath, heroAvatarPath } = hero;
+  const { heroData, name } = data;
+  const { cvPath, intro, videoLink, heroImgPath, heroAvatarPath } = heroData;
   const [isHovering, setIsHovered] = useState(false);
   const onMouseEnter = () => setIsHovered(true);
   const onMouseLeave = () => setIsHovered(false);
@@ -43,7 +44,9 @@ const Hero = () => {
           <Image
             src={isHovering ? heroImgPath : heroAvatarPath}
             alt="user"
-            layout="fill"
+            fill
+            priority
+            sizes="auto"
             className="object-cover rounded-full hover:scale-x-[-1]"
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}

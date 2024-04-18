@@ -1,7 +1,8 @@
 import { DevicePhoneMobileIcon, EnvelopeIcon, MapIcon } from "@heroicons/react/20/solid";
-import { footer } from "../../../public/components/data/index.json";
+import data from "../../../public/components/data/index.json";
 
-const { address, email, phone } = footer;
+const { footerData } = data;
+const { address, email, phone } = footerData;
 
 export interface FooterDataType {
   Icon: any;
@@ -9,7 +10,7 @@ export interface FooterDataType {
   value: string;
 }
 
-export const footerData = [
+export const footerObjects = [
   {
     Icon: MapIcon,
     heading: "Address",

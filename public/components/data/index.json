@@ -1,7 +1,7 @@
 {
   "shortName": "Shiv",
   "name": "Shivaram",
-  "hero": {
+  "heroData": {
     "roles": [
       "Coder",
       "Web Developer",
@@ -17,18 +17,18 @@
     "heroImgPath": "/images/u2-1.jpg",
     "heroAvatarPath": "/images/u2.png"
   },
-  "aboutMe": {
+  "aboutMeData": {
     "intro": "My journey commenced as a full-stack developer, with proficiency in React.js for frontend development and Node.js for backend tasks. Over time, a transition was made towards specialization in React.js, leading to the current role as a full-time frontend developer. Additionally, a gradual transition to Next.js is underway, alongside continued contributions as a part-time backend developer, utilizing expertise in JavaScript and TypeScript to address minor bugs and enhance overall system functionality.",
     "cvPath": "/components/resume/R_Shivaram_Resume.pdf",
     "aboutImgPath": "",
     "aboutAvatarPath": "/images/about.jpg"
   },
-  "services": {
+  "servicesData": {
     "frontendData": " Began in Aug 2020 as full-stack web dev with React.js & JS. Transitioned to focus on React.js with TypeScript. Learning Next.js. Exp in Redux, React-Query. Mastering HTML, CSS, SCSS. Explored Material UI, Bootstrap, AntDesign, Syncfusion, Tailwind CSS, DevExtreme for data projects. Excited about DevExtreme`s data features.",
     "backendData": "Started as a full stack developer, specializing in API development with Node.js, MongoDB, and MySQL. Shifted focus to frontend due to job demands. Currently exploring Nest.js with TypeScript for backend tasks.",
     "fullstackData": "Although my career commenced as a full-stack developer, project requirements prompted me to pivot and intensify my focus on frontend development. Presently, I am adept at contributing to both frontend and backend development as per project demands, leveraging my proficiency in JavaScript and TypeScript."
   },
-  "experienceAndSkills": {
+  "experienceAndSkillsData": {
     "experience": [
       {
         "title": "React Developer",
@@ -131,7 +131,7 @@
       }
     ]
   },
-  "projects": [
+  "projectsData": [
     {
       "imgPath": "/images/p1.jpg",
       "code": "https://github.com/shivaramr/weather-app",
@@ -151,7 +151,7 @@
       "video": "https://www.youtube.com/watch?v=tKiva6KAp6w"
     }
   ],
-  "revs": [
+  "revsData": [
     {
       "imgPath": "/images/v1.jpg",
       "name": "Venkatesh Jalendiran",
@@ -181,12 +181,12 @@
       "starRating": 5
     }
   ],
-  "contactMe": {
+  "contactMeData": {
     "info": "I`m actively seeking new opportunities, and my inbox is readily available. Whether you have a query or simply wish to reach out, I`ll endeavor to respond promptly!",
     "github": "https://github.com/shivaramr",
     "linkedin": "https://www.linkedin.com/in/rshivaram"
   },
-  "footer": {
+  "footerData": {
     "address": "Aswathy, Metro Gardens, Kerala-682017",
     "phone": "+91-9567794351",
     "email": "shivaramr.mec@gmail.com"

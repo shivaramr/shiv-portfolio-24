@@ -4,10 +4,11 @@ import {
   RocketLaunchIcon,
   CodeBracketSquareIcon,
 } from "@heroicons/react/20/solid";
-import { services } from "../../../public/components/data/index.json";
+import data from "../../../public/components/data/index.json";
 
 const MyServices = () => {
-  const { frontendData, backendData, fullstackData } = services;
+  const { servicesData } = data;
+  const { frontendData, backendData, fullstackData } = servicesData;
   return (
     <div id="services" className="bg-[#121212] pt-[4rem] md:pt-[8rem] pb-[5rem]">
       <p className="heading">

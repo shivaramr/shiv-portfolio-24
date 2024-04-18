@@ -1,10 +1,11 @@
 import React from "react";
 import Image from "next/image";
 import { ArrowDownTrayIcon } from "@heroicons/react/20/solid";
-import { aboutMe } from "../../../public/components/data/index.json";
+import data from "../../../public/components/data/index.json";
 
 const AboutMe = () => {
-  const { intro, cvPath, aboutAvatarPath } = aboutMe;
+  const { aboutMeData } = data;
+  const { intro, cvPath, aboutAvatarPath } = aboutMeData;
   return (
     <div id="about" className="bg-[#121121] pb-[3rem] pt-[4rem] md:pt-[8rem]">
       <div className="grid gird-cols-1 md:grid-cols-2 w-[80%] mx-auto gap-[3rem] items-center">
@@ -31,8 +32,9 @@ const AboutMe = () => {
           <Image
             src={aboutAvatarPath}
             alt="user"
-            layout="fill"
-            objectFit="contain"
+            fill
+            priority
+            sizes="auto"
             className="relative z-[11] w-[100%] h-[100%] object-contain"
           />
           <div className="absolute w-[100%] h-[100%] z-[10] bg-[#55e6a5] top-[-2rem] right-[-2rem]"></div>

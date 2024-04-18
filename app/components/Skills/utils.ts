@@ -1,3 +1,4 @@
-import { experienceAndSkills } from "../../../public/components/data/index.json";
+import data from "../../../public/components/data/index.json";
 
-export const skills = experienceAndSkills.skills
+const { experienceAndSkillsData } = data;
+export const skills = experienceAndSkillsData.skills;
