@@ -1,13 +1,13 @@
 import React from "react";
 import { XMarkIcon } from "@heroicons/react/20/solid";
+import { useProfileContext } from "@/app/contexts/context";
 
-interface Props {
-  nav: boolean;
-  closeNav: () => void;
-}
-
-const MobileNav = ({ nav, closeNav }: Props) => {
+const MobileNav = () => {
+  const { state, dispatch } = useProfileContext();
+  const { nav } = state;
   const navAnimation = nav ? "translate-x-0" : "translate-x-[-100%]";
+
+  const closeNav = () => dispatch({ type: "CLOSE_NAV" });
 
   return (
     <div

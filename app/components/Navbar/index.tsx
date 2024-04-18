@@ -1,12 +1,14 @@
 import React from "react";
 import { Bars3Icon } from "@heroicons/react/20/solid";
-import { shortName } from "../../../public/components/data/index.json";
+import { useProfileContext } from "@/app/contexts/context";
+import data from "../../../public/components/data/index.json";
 
-interface Props {
-  openNav: () => void;
-}
+const NavBar = () => {
+  const { shortName } = data;
+  const { dispatch } = useProfileContext();
 
-const NavBar = ({ openNav }: Props) => {
+  const openNav = () => dispatch({ type: "OPEN_NAV" });
+
   return (
     <div className="w-full fixed z-[10000] top-0 h-[12vh] bg-[#141c27] shadow-md">
       <div className="flex items-center justify-between w-[80%] mx-auto px-[1rem] h-[100%]">

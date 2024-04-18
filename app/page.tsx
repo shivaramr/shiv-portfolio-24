@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import NavBar from "./components/Navbar";
 import Hero from "./components/Hero";
 import MyServices from "./components/MyServices";
@@ -12,15 +12,12 @@ import RevsAndRecmnds from "./components/RevsAndRecmnds";
 import MobileNav from "./components/Navbar/MobileNav";
 import ContactUs from "./components/ContactUs";
 import Skills from "./components/Skills";
+import { ProfileProvider } from "./contexts/context";
 import { Toaster } from "sonner";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 export default function Home() {
-  const [nav, setNav] = useState(false);
-  const openNav = () => setNav(true);
-  const closeNav = () => setNav(false);
-
   useEffect(() => {
     AOS.init({
       // Global settings:
@@ -45,21 +42,23 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="font-primary">
-      <Toaster position="bottom-left" richColors/>
-      <MobileNav nav={nav} closeNav={closeNav} />
-      <NavBar openNav={openNav} />
-      <Hero />
-      <div className="relative z-[30]">
-        <AboutMe />
-        <MyServices />
-        <ExperienceAndSkill />
-        <Skills />
-        <Projects />
-        <RevsAndRecmnds />
+    <ProfileProvider>
+      <div className="font-primary">
+        <Toaster position="bottom-left" richColors />
+        <MobileNav />
+        <NavBar />
+        <Hero />
+        <div className="relative z-[30]">
+          <AboutMe />
+          <MyServices />
+          <ExperienceAndSkill />
+          <Skills />
+          <Projects />
+          <RevsAndRecmnds />
+        </div>
+        <ContactUs />
+        <Footer />
       </div>
-      <ContactUs />
-      <Footer />
-    </div>
+    </ProfileProvider>
   );
 }
