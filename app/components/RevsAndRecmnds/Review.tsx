@@ -19,8 +19,7 @@ const Review = ({ image, name, role, desc, starRating }: Props) => {
         alt={name}
         width={100}
         height={100}
-        objectFit="contain"
-        className="mx-auto mb-[2rem] rounded-full"
+        className="mx-auto mb-[2rem] rounded-full object-contain"
       />
       <div className="flex items-center mx-auto">
         {stars.map((_, idx) => (
