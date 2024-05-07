@@ -153,6 +153,13 @@
   ],
   "revsData": [
     {
+      "imgPath": "/images/n1.jpg",
+      "name": "Neeraja Raje",
+      "role": "Senior Technical Writer",
+      "desc": "I have been working closing with Shiv over the past 11 months. He has led the frontend implementations for one of our key estimation products. Besides the genuine knack for frontend and backend coding, Shiv goes and above beyond to bring in standards and also document flows and processes to help out his team mates. His sense of accountability makes him an asset to the team.",
+      "starRating": 5
+    },
+    {
       "imgPath": "/images/v1.jpg",
       "name": "Venkatesh Jalendiran",
       "role": "Development Manager",
