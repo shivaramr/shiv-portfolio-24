@@ -153,6 +153,13 @@
   ],
   "revsData": [
     {
+      "imgPath": "/images/b1.jpg",
+      "name": "Bhagyashri Patil",
+      "role": "Technical Business Analyst at Gleren Technologies",
+      "desc": "I highly recommend Shivaram as a talented React Developer. His ability to communicate complex ideas clearly, paired with strong technical skills, sets him apart. Shivaram consistently delivers clean, efficient code and collaborates seamlessly with the team, making him a standout frontend developer.",
+      "starRating": 4
+    },
+    {
       "imgPath": "/images/n1.jpg",
       "name": "Neeraja Raje",
       "role": "Senior Technical Writer",
