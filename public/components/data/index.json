@@ -133,6 +133,12 @@
   },
   "projectsData": [
     {
+      "imgPath": "/images/p4.png",
+      "code": "https://github.com/shivaramr/healthCare",
+      "demo": "https://health-care-indol-iota.vercel.app/",
+      "video": "https://www.youtube.com/watch?v=adl7fUKTdsA"
+    },
+    {
       "imgPath": "/images/p1.jpg",
       "code": "https://github.com/shivaramr/weather-app",
       "demo": "https://weather-app-gold-beta.vercel.app/",
