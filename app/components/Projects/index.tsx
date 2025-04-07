@@ -16,7 +16,7 @@ const Projects = () => {
             key={`${imgPath}-${code}`}
             data-aos-delay={`${aosDelay}`}
           >
-            <div className="relative transform cursor-pointer hover:translate-y-6 transition-all duration-200 w-[100%] h-[200px] md:h-[300px]">
+            <div className="relative transform cursor-pointer transition-all duration-200 w-[100%] h-[200px] md:h-[300px]">
               <Image src={imgPath} alt="portfolio" fill sizes="auto" className="object-contain" />
               <div className="absolute h-full w-full bg-black/70 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300 text-white gap-[2rem]">
                 {code && (
